@@ -1,4 +1,4 @@
-package com.Naukri31.Testcases;
+package com.Naukri31.BaseTest;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,11 +24,11 @@ public class BaseClass {
 	public LoginPage lp;
 	public HomePage home; 
 	ReadConfig rc = new ReadConfig();
-	String Url = rc.getBaseUrl();
-	String Username=rc.getUsername();
-	String Password=rc.getPassword();
-	String str = rc.getResumeHeadline();
-	String str_withSpace = rc.getResumeHeadline_withSpace();		
+	public String Url = rc.getBaseUrl();
+	public String Username=rc.getUsername();
+	public String Password=rc.getPassword();
+	public String str = rc.getResumeHeadline();
+	public String str_withSpace = rc.getResumeHeadline_withSpace();		
 		
 	@BeforeClass
 	public void setup()
