@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 
 import com.Naukri31.PageObjects.HomePage;
 import com.Naukri31.PageObjects.LoginPage;
+import com.Naukri31.Utilities.ReadConfig;
 
 public class BaseClass {
 	
@@ -17,11 +18,12 @@ public class BaseClass {
 	public Logger logger;
 	public LoginPage lp;
 	public HomePage home; 
-	String Url = "https://www.naukri.com/mnjuser/profile?id=&altresid";
-	String Username="venkey402@gmail.com";
-	String Password="9030196907";
-	String str = "9.5 Years experience in automation testing, manual testing and API testing.";
-	String str_withSpace = "9.5 Years experience in automation testing, manual testing and API testing .";
+	ReadConfig rc = new ReadConfig();
+	String Url = rc.getBaseUrl();
+	String Username=rc.getUsername();
+	String Password=rc.getPassword();
+	String str = rc.getResumeHeadline();
+	String str_withSpace = rc.getResumeHeadline_withSpace();
 		
 		
 	@BeforeClass
