@@ -38,8 +38,7 @@ public class TC_UpdateProfile_001 extends BaseClass
 			 Thread.sleep(20000);
 			 logger.info("Waited for 20 secs before starting the next update...");
 			 count++;	
-		 } 
-		
+		 } 		
 		
 	}
 	
