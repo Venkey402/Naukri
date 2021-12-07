@@ -23,13 +23,13 @@ public class TC_UpdateProfile_001 extends BaseClass
 						 
 			 if (count%2==0)
 			 {
-				 home.setResumeHeadline(str);
+				 home.setResumeHeadline(ResumeHeadline);
 				 logger.info("Updated the resume headling without SPACE...");
 				 count=0;
 			 }
 			 else
 			 {
-				 home.setResumeHeadline(str_withSpace);
+				 home.setResumeHeadline(ResumeHeadline_withSpace);
 				 logger.info("Updated the resume headling by adding SPACE...");
 			 }
 			 

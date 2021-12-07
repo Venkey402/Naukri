@@ -27,8 +27,8 @@ public class BaseClass {
 	public String Url = rc.getBaseUrl();
 	public String Username=rc.getUsername();
 	public String Password=rc.getPassword();
-	public String str = rc.getResumeHeadline();
-	public String str_withSpace = rc.getResumeHeadline_withSpace();		
+	public String ResumeHeadline = rc.getResumeHeadline();
+	public String ResumeHeadline_withSpace = rc.getResumeHeadline_withSpace();		
 		
 	@BeforeClass
 	public void setup()
