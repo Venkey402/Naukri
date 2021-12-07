@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.Naukri31.BaseTest.BaseClass;
 
 public class LoginPage extends BaseClass{
+	
 	public HomePage home;
 	WebDriver driver;
 	// Constructor

@@ -65,10 +65,12 @@ public class BaseClass {
 		File src = tss.getScreenshotAs(OutputType.FILE);
 		logger.info("Screenshot taken...");
 		File dest = new File(System.getProperty("user.dir")+"\\Screenshots\\"+FileName);		
-		try {
+		try 
+		{
 			FileUtils.copyFile(src, dest);
 			logger.info("Screenshot placed in the screenshot folder...");
-		} catch (IOException e) {
+		} catch (IOException e) 
+		{
 			e.printStackTrace();
 		} 
 		

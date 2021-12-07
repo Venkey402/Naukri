@@ -43,6 +43,5 @@ public class HomePage extends BaseClass{
 	public void SaveResumeHeadline()
 	{
 		btnSaveInResumeHeadline.click();
-	}
-	
+	}	
 }

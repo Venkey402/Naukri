@@ -10,16 +10,20 @@ public class ReadConfig {
 	FileInputStream fis;
 	public ReadConfig()
 	{		
-		try {
+		try 
+		{
 			fis = new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties");
-		} catch (FileNotFoundException e) {
+		} catch (FileNotFoundException e) 
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		pro = new Properties();			
-		try {
+		try 
+		{
 			pro.load(fis);
-		} catch (IOException e) {
+		} catch (IOException e) 
+		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
@@ -44,7 +48,5 @@ public class ReadConfig {
 	public String getResumeHeadline_withSpace()
 	{		
 		return pro.getProperty("ResumeHeadline_withSpace");		
-	}
-	
-	
+	}	
 }
