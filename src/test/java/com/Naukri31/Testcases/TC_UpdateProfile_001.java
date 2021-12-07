@@ -18,13 +18,13 @@ public class TC_UpdateProfile_001 extends BaseClass
 		 while (true)
 		 {	 
 			 home.editResumeHeadline();
-			 logger.info("Editing the Resume headline...");
+			 logger.info("Clicked on the edit icon on the Resume headline...");
 			 Thread.sleep(10000);
 						 
 			 if (count%2==0)
 			 {
 				 home.setResumeHeadline(str);
-				 logger.info("Updating the resume headling without SPACE...");
+				 logger.info("Updated the resume headling without SPACE...");
 				 count=0;
 			 }
 			 else
