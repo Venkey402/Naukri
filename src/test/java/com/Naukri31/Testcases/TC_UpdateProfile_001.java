@@ -34,8 +34,9 @@ public class TC_UpdateProfile_001 extends BaseClass
 			 }
 			 
 			 home.SaveResumeHeadline();
+			 logger.info("Saving the Resume Headline...");
 			 Thread.sleep(20000);
-			 count++;		 
+			 count++;	
 		 } 
 		
 		

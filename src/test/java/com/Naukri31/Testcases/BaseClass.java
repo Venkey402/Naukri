@@ -1,8 +1,15 @@
 package com.Naukri31.Testcases;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -52,5 +59,22 @@ public class BaseClass {
 		logger.info("dirver quitted...");
 	}
 	
+	public void TakeScreenshot()
+	{		
+		SimpleDateFormat dateformat = new SimpleDateFormat("yyyyMMddHHmmss");
+		Date date = new Date();
+		String FileName = "Screenshot_"+dateformat.format(date)+".png";
+		TakesScreenshot tss = (TakesScreenshot)driver;
+		File src = tss.getScreenshotAs(OutputType.FILE);
+		logger.info("Screenshot taken...");
+		File dest = new File(System.getProperty("user.dir")+"\\Screenshots\\"+FileName);		
+		try {
+			FileUtils.copyFile(src, dest);
+			logger.info("Screenshot placed in the screenshot folder...");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+		
+	}
 
 }
