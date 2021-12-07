@@ -1,7 +1,6 @@
 package com.Naukri31.Testcases;
 
 import org.testng.annotations.Test;
-
 import com.Naukri31.BaseTest.BaseClass;
 import com.Naukri31.PageObjects.HomePage;
 import com.Naukri31.PageObjects.LoginPage;
