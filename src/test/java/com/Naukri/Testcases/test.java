@@ -1,4 +1,4 @@
-package com.Naukri31.Testcases;
+package com.Naukri.Testcases;
 
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package com.Naukri31.PageObjects;
+package com.Naukri.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Naukri31.BaseTest.BaseClass;
+import com.Naukri.BaseTest.BaseClass;
 
 public class HomePage extends BaseClass{
 	

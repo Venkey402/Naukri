@@ -1,4 +1,4 @@
-package com.Naukri31.Utilities;
+package com.Naukri.Utilities;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

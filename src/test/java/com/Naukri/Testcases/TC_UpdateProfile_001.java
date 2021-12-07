@@ -1,9 +1,10 @@
-package com.Naukri31.Testcases;
+package com.Naukri.Testcases;
 
 import org.testng.annotations.Test;
-import com.Naukri31.BaseTest.BaseClass;
-import com.Naukri31.PageObjects.HomePage;
-import com.Naukri31.PageObjects.LoginPage;
+
+import com.Naukri.BaseTest.BaseClass;
+import com.Naukri.PageObjects.HomePage;
+import com.Naukri.PageObjects.LoginPage;
 
 public class TC_UpdateProfile_001 extends BaseClass
 {

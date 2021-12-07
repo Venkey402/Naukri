@@ -1,4 +1,4 @@
-package com.Naukri31.Utilities;
+package com.Naukri.Utilities;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

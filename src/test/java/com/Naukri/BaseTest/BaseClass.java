@@ -1,4 +1,4 @@
-package com.Naukri31.BaseTest;
+package com.Naukri.BaseTest;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,9 +13,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import com.Naukri31.PageObjects.HomePage;
-import com.Naukri31.PageObjects.LoginPage;
-import com.Naukri31.Utilities.ReadConfig;
+
+import com.Naukri.PageObjects.HomePage;
+import com.Naukri.PageObjects.LoginPage;
+import com.Naukri.Utilities.ReadConfig;
 
 public class BaseClass {
 	

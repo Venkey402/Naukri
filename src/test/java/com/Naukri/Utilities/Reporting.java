@@ -1,4 +1,4 @@
-package com.Naukri31.Utilities;
+package com.Naukri.Utilities;
 
 //Listener class used to generate Extent reports
 

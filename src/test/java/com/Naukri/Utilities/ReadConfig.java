@@ -1,4 +1,4 @@
-package com.Naukri31.Utilities;
+package com.Naukri.Utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
