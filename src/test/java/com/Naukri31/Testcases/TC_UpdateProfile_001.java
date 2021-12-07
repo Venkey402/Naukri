@@ -30,12 +30,13 @@ public class TC_UpdateProfile_001 extends BaseClass
 			 else
 			 {
 				 home.setResumeHeadline(str_withSpace);
-				 logger.info("Updating the resume headling by adding SPACE...");
+				 logger.info("Updated the resume headling by adding SPACE...");
 			 }
 			 
 			 home.SaveResumeHeadline();
-			 logger.info("Saving the Resume Headline...");
+			 logger.info("Saved the Resume Headline...");
 			 Thread.sleep(20000);
+			 logger.info("Waited for 20 secs before starting the next update...");
 			 count++;	
 		 } 
 		
