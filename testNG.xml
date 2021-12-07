@@ -2,9 +2,11 @@
 <suite name = "suite 1">
 <listeners>
 	<listener class-name ="com.Naukri31.Utilities.MyTransformer"/>
+	<listener class-name="com.Naukri31.Utilities.Reporting" />
 </listeners>
 	<test name ="test1">
 		<classes>
+			<!-- <class name = "com.Naukri31.Testcases.test"/>	 -->
 			<class name = "com.Naukri31.Testcases.TC_UpdateProfile_001"/>			
 		</classes>
 	</test>
