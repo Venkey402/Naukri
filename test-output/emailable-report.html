@@ -8,58 +8,45 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">suite 1</th></tr>
-<tr><td><a href="#t0">test1</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">9</td><td class="num attn">3</td><td class="num">219</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite : Naukri</th></tr>
+<tr><td><a href="#t0">test : Naukri</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">32,897</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">suite 1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.Naukri31.Testcases.test</td><td><a href="#m0">method1</a></td><td rowspan="1">1638864890454</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">method2</a></td><td rowspan="1">1638864890464</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">method3</a></td><td rowspan="1">1638864890473</td><td rowspan="1">1</td></tr><tr><th colspan="4">test1 &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="9">com.Naukri31.Testcases.test</td><td><a href="#m3">method1</a></td><td rowspan="3">1638864890432</td><td rowspan="3">6</td></tr><tr class="retriedeven"><td><a href="#m4">method1</a></td></tr><tr class="retriedeven"><td><a href="#m5">method1</a></td></tr><tr class="retriedeven"><td><a href="#m6">method2</a></td><td rowspan="3">1638864890459</td><td rowspan="3">1</td></tr><tr class="retriedeven"><td><a href="#m7">method2</a></td></tr><tr class="retriedeven"><td><a href="#m8">method2</a></td></tr><tr class="retriedeven"><td><a href="#m9">method3</a></td><td rowspan="3">1638864890471</td><td rowspan="3">1</td></tr><tr class="retriedeven"><td><a href="#m10">method3</a></td></tr><tr class="retriedeven"><td><a href="#m11">method3</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite : Naukri</th></tr></tbody><tbody id="t0"><tr><th colspan="4">test : Naukri &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Naukri.Testcases.TC_UpdateProfile_001</td><td><a href="#m0">setup</a></td><td rowspan="1">1638936121635</td><td rowspan="1">32686</td></tr><tr><th colspan="4">test : Naukri &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Naukri.Testcases.TC_UpdateProfile_001</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1638936154346</td><td rowspan="1">-1638936154346</td></tr><tr><th colspan="4">test : Naukri &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.Naukri.Testcases.TC_UpdateProfile_001</td><td><a href="#m2">test1</a></td><td rowspan="1">1638936154333</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>test1</h2><h3 id="m0">com.Naukri31.Testcases.test#method1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method1(test.java:10)
+<h2>test : Naukri</h2><h3 id="m0">com.Naukri.Testcases.TC_UpdateProfile_001#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.001
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VENKATM3IN&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\venkatm\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49958}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58b1f6cc1b784457313a73cf1d6941b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.Naukri.BaseTest.BaseClass.setup(BaseClass.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.Naukri31.Testcases.test#method2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method2(test.java:15)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Naukri.Testcases.TC_UpdateProfile_001#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Naukri.Testcases.TC_UpdateProfile_001#test1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.001
+  (Session info: chrome=96.0.4664.45)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VENKATM3IN&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\venkatm\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49958}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e58b1f6cc1b784457313a73cf1d6941b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.Naukri.BaseTest.BaseClass.setup(BaseClass.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.Naukri31.Testcases.test#method3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method3(test.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.Naukri31.Testcases.test#method1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method1(test.java:10)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.Naukri31.Testcases.test#method1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method1(test.java:10)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.Naukri31.Testcases.test#method1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method1(test.java:10)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.Naukri31.Testcases.test#method2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method2(test.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.Naukri31.Testcases.test#method2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method2(test.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.Naukri31.Testcases.test#method2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method2(test.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.Naukri31.Testcases.test#method3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method3(test.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.Naukri31.Testcases.test#method3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method3(test.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.Naukri31.Testcases.test#method3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ArithmeticException: / by zero
-	at com.Naukri31.Testcases.test.method3(test.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
