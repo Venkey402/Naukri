@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name = "suite 1">
+<suite name = "Suite : Naukri">
 <listeners>
-	<listener class-name ="com.Naukri31.Utilities.MyTransformer"/>
-	<listener class-name="com.Naukri31.Utilities.Reporting" />
+	<listener class-name ="com.Naukri.Utilities.MyTransformer"/>
+	<listener class-name="com.Naukri.Utilities.Reporting" />
 </listeners>
-	<test name ="test1">
+	<test name ="test : Naukri">
 		<classes>
-			<!-- <class name = "com.Naukri31.Testcases.test"/>	 -->
-			<class name = "com.Naukri31.Testcases.TC_UpdateProfile_001"/>			
+			<!-- <class name = "com.Naukri.Testcases.test"/>	 -->
+			<class name = "com.Naukri.Testcases.TC_UpdateProfile_001"/>			
 		</classes>
 	</test>
 </suite>
