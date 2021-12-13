@@ -15,13 +15,17 @@ public class TC_UpdateProfile_001 extends BaseClass
 	{ 
 		lp = new LoginPage(driver);
 		home =lp.Login(Username, Password);
+		logger.info("User logged in Successfully...");
+		home.UploadResume(System.getProperty("user.dir")+"\\src\\test\\java\\com\\Naukri\\TestData\\Venkatrao Mamidi.pdf");
+		home.ValidatingResumeUploadedSuccessfully();			 
+		logger.info("Uploaded the resume...");
+		
 		int count=0;
 		 while (true)
 		 {	 
 			 home.editResumeHeadline();
 			 logger.info("Clicked on the edit icon on the Resume headline...");
-			 Thread.sleep(10000);
-						 
+			 Thread.sleep(10000);						 
 			 if (count%2==0)
 			 {
 				 home.setResumeHeadline(ResumeHeadline);
