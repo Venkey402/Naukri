@@ -19,7 +19,7 @@ public class TC_UpdateProfile_001 extends BaseClass
 		home.UploadResume(System.getProperty("user.dir")+"\\src\\test\\java\\com\\Naukri\\TestData\\Venkatrao Mamidi.pdf");
 		home.ValidatingResumeUploadedSuccessfully();			 
 		logger.info("Uploaded the resume...");
-		
+		Thread.sleep(5000);
 		int count=0;
 		 while (true)
 		 {	 
