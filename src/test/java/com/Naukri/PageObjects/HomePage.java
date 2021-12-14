@@ -40,8 +40,6 @@ public class HomePage extends BaseClass{
 	
 	
 	
-	//attachCV
-	
 	// Action methods
 	
 	public void editResumeHeadline()
@@ -67,7 +65,6 @@ public class HomePage extends BaseClass{
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 60);		
 		wait.until(ExpectedConditions.visibilityOf(lblResumeUploadedSuccessfully));
-	}
-	
+	}	
 	
 }
