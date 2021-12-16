@@ -20,7 +20,7 @@ public class TC_UpdateProfile_001 extends BaseClass
 		logger.info("Uploaded the resume...");
 		//home.ValidatingResumeUploadedSuccessfully();			 
 		//logger.info("Validated that resume uploaded successfully or not...");
-		Thread.sleep(20000);
+		Thread.sleep(5000);
 		int count=0;
 		 while (true)
 		 {	 
