@@ -1,0 +1,10 @@
+com\Naukri\Testcases\test.class
+com\Naukri\Testcases\DragandDrop.class
+com\Naukri\Utilities\RetryAnalyzer.class
+com\Naukri\PageObjects\HomePage.class
+com\Naukri\Testcases\TC_UpdateProfile_001.class
+com\Naukri\PageObjects\LoginPage.class
+com\Naukri\BaseTest\BaseClass.class
+com\Naukri\Utilities\ReadConfig.class
+com\Naukri\Utilities\Reporting.class
+com\Naukri\Utilities\MyTransformer.class

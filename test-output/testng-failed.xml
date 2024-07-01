@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Naukri.Testcases.DragandDrop">
+      <class name="com.Naukri.Testcases.TC_UpdateProfile_001">
         <methods>
           <include name="setup"/>
-          <include name="draganddrop"/>
+          <include name="test1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Naukri.Testcases.DragandDrop -->
+      </class> <!-- com.Naukri.Testcases.TC_UpdateProfile_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

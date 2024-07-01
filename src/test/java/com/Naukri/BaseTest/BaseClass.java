@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Logger;
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ import com.Naukri.Utilities.ReadConfig;
 public class BaseClass {
 	
 	public WebDriver driver;
-	public Logger logger;
+	public static Logger logger;
 	public LoginPage lp;
 	public HomePage home; 
 	ReadConfig rc = new ReadConfig();
@@ -34,8 +35,9 @@ public class BaseClass {
 	@BeforeClass
 	public void setup()
 	{
+		PropertyConfigurator.configure("log4j.properties");
 		logger = Logger.getLogger("Naukri");
-		logger.config("log4j.properties");
+//		logger.config("log4j.properties");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		logger.info("Chrome driver initialised...");
@@ -43,8 +45,8 @@ public class BaseClass {
 		logger.info("Window Maximised...");
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		logger.info("Page load time out is set to 30 secs...");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
-		logger.info("Implicit wait is set to 30 secs...");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
+		logger.info("Implicit wait is set to 10 secs...");
 		driver.get(Url);
 		logger.info("url is opened...");
 	}

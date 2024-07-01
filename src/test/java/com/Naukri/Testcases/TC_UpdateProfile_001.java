@@ -18,12 +18,13 @@ public class TC_UpdateProfile_001 extends BaseClass
 		logger.info("User logged in Successfully...");
 		home.UploadResume(System.getProperty("user.dir")+"\\src\\test\\java\\com\\Naukri\\TestData\\Venkatrao Mamidi.pdf");
 		logger.info("Uploaded the resume...");
-		//home.ValidatingResumeUploadedSuccessfully();			 
-		//logger.info("Validated that resume uploaded successfully or not...");
+		home.ValidatingResumeUploadedSuccessfully();			 
+		logger.info("Validated that resume uploaded successfully or not...");
 		Thread.sleep(5000);
 		int count=0;
 		 while (true)
 		 {	 
+			 home.clickResumeHeadlineLink();
 			 home.editResumeHeadline();
 			 logger.info("Clicked on the edit icon on the Resume headline...");
 			 Thread.sleep(10000);						 

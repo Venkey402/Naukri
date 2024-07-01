@@ -1,5 +1,8 @@
 package com.Naukri.PageObjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,7 +25,11 @@ public class HomePage extends BaseClass{
 	
 	// Locators
 	
-	@FindBy(how=How.XPATH,using="//div[@class='resumeHeadline']/div/div/div/span[text()='Resume Headline']/../span[@class='edit icon']")
+
+	@FindBy(xpath="//div[@class='card quickLink ']//span[text()='Resume headline']")
+	WebElement linkResumeHeadline;	
+	
+	@FindBy(how=How.XPATH,using="//*[@class='widgetHead']//*[@class='edit icon']")
 	WebElement icnResumeHeadLine;
 		
 	@FindBy(how=How.ID,using="resumeHeadlineTxt")
@@ -41,6 +48,27 @@ public class HomePage extends BaseClass{
 	
 	
 	// Action methods
+	
+	public void closeChatBot()
+	{
+		List<WebElement> chatBot = driver.findElements(By.xpath("//div[@class='chatbot_Nav']/div"));
+		
+		if(chatBot.size()>0)
+		{
+			chatBot.get(0).click();
+			logger.info("Closed chatBot Window");
+		}		
+		else
+		{
+			logger.info("ChatBot Window not appeared");
+		}		
+	}
+	
+	public void clickResumeHeadlineLink()
+	{
+		linkResumeHeadline.click();
+		logger.info("Clicked on resume headline quick link");
+	}
 	
 	public void editResumeHeadline()
 	{
