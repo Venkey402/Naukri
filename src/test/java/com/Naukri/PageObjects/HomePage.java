@@ -3,6 +3,7 @@ package com.Naukri.PageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -45,6 +46,8 @@ public class HomePage extends BaseClass{
 	@FindBy(how=How.XPATH,using="//p[text()='Resume has been successfully uploaded.']")
 	WebElement lblResumeUploadedSuccessfully;
 	
+	@FindBy(how=How.XPATH,using="//p[text()='Resume Headline has been successfully saved.']")
+	WebElement lblResumeHeadLineUpdatedSuccessfully;
 	
 	
 	// Action methods
@@ -76,7 +79,22 @@ public class HomePage extends BaseClass{
 	}
 	public void setResumeHeadline(String Headline)
 	{
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true)", txtResumeHeadLine);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		txtResumeHeadLine.clear();
+		
 		txtResumeHeadLine.sendKeys(Headline);
 	}
 	public void SaveResumeHeadline()
@@ -91,8 +109,17 @@ public class HomePage extends BaseClass{
 	
 	public void ValidatingResumeUploadedSuccessfully()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 60);		
+		WebDriverWait wait = new WebDriverWait(driver, 20);		
 		wait.until(ExpectedConditions.visibilityOf(lblResumeUploadedSuccessfully));
 	}	
+	
+	public boolean verifyResumeHeadlineUpdatedSuccessfully()
+	{
+		
+		return lblResumeHeadLineUpdatedSuccessfully.isDisplayed();
+	}	
+	
+	
+	
 	
 }

@@ -30,7 +30,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.0</version>
-				<configuration>					
+				<configuration>		
+					<systemPropertyVariables>
+						<yearsOfExperience>yearsOfExperience</yearsOfExperience>
+					</systemPropertyVariables>			
 					<suiteXmlFiles>
 						<suiteXmlFile>testNG.xml</suiteXmlFile>
 					</suiteXmlFiles>

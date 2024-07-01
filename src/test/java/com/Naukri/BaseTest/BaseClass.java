@@ -25,19 +25,24 @@ public class BaseClass {
 	public static Logger logger;
 	public LoginPage lp;
 	public HomePage home; 
-	ReadConfig rc = new ReadConfig();
-	public String Url = rc.getBaseUrl();
-	public String Username=rc.getUsername();
-	public String Password=rc.getPassword();
-	public String ResumeHeadline = rc.getResumeHeadline();
-	public String ResumeHeadline_withSpace = rc.getResumeHeadline_withSpace();		
+	ReadConfig rc;
+	public String url;
+	public String username;
+	public String password;
+	public String resumeHeadline;
+
 		
 	@BeforeClass
 	public void setup()
-	{
-		PropertyConfigurator.configure("log4j.properties");
+	{		
+		rc = new ReadConfig();
+		url = rc.getBaseUrl();
+		username=rc.getUsername();
+		password=rc.getPassword();
+		resumeHeadline = System.getProperty("yearsOfExperience")+" "+rc.getResumeHeadline();
 		logger = Logger.getLogger("Naukri");
-//		logger.config("log4j.properties");
+		PropertyConfigurator.configure("log4j.properties");
+
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		logger.info("Chrome driver initialised...");
@@ -47,7 +52,7 @@ public class BaseClass {
 		logger.info("Page load time out is set to 30 secs...");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);	
 		logger.info("Implicit wait is set to 10 secs...");
-		driver.get(Url);
+		driver.get(url);
 		logger.info("url is opened...");
 	}
 	
