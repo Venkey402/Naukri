@@ -45,7 +45,7 @@ public class BaseClass {
 		logger = Logger.getLogger("Naukri");
 		PropertyConfigurator.configure("log4j.properties");
 
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers//chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		logger.info("Chrome driver initialised...");
 		driver.manage().window().maximize();
