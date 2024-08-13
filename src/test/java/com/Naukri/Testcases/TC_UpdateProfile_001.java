@@ -18,7 +18,7 @@ public class TC_UpdateProfile_001 extends BaseClass
 		lp = new LoginPage(driver);
 		home =lp.Login(username, password);
 		logger.info("User logged in Successfully...");
-		home.UploadResume(System.getProperty("user.dir")+"\\src\\test\\java\\com\\Naukri\\TestData\\Venkatrao Mamidi.pdf");
+		home.UploadResume(System.getProperty("user.dir")+"\\src\\test\\java\\com\\Naukri\\TestData\\Venkatrao_Mamidi.pdf");
 		logger.info("Uploaded the resume...");
 		home.ValidatingResumeUploadedSuccessfully();			 
 		logger.info("Validated that resume uploaded successfully or not...");		 
