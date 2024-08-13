@@ -21,6 +21,8 @@ import com.Naukri.PageObjects.HomePage;
 import com.Naukri.PageObjects.LoginPage;
 import com.Naukri.Utilities.ReadConfig;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 	
 	public WebDriver driver;
@@ -44,8 +46,7 @@ public class BaseClass {
 		resumeHeadline = System.getProperty("yearsOfExperience")+" "+rc.getResumeHeadline();
 		logger = Logger.getLogger("Naukri");
 		PropertyConfigurator.configure("log4j.properties");
-
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().setup();		
 		driver = new ChromeDriver();
 		logger.info("Chrome driver initialised...");
 		driver.manage().window().maximize();
