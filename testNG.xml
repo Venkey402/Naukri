@@ -3,9 +3,6 @@
 	<test name="test : Naukri">
 		<classes>
 			<class name="com.Naukri.Testcases.TC_UpdateProfile_001" />
-			<!-- <class name = "com.Naukri.Testcases.DragandDrop"/>
-				<class name = "com.Naukri.Testcases.test"/>	
-				-->
 		</classes>
 	</test>
 </suite>

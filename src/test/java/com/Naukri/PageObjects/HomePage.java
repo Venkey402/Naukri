@@ -104,6 +104,12 @@ public class HomePage extends BaseClass{
 	
 	public void UploadResume(String Resumepath)
 	{
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		btnUpdateResume.sendKeys(Resumepath);
 	}
 	
